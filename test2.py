@@ -29,6 +29,13 @@ while True:
         else:
             print("name is not exit in the phone directory") 
             
+            
+    elif menu_num == 4:
+       my_keys=list(phoneDirectory.keys())
+       my_keys.sort()
+       sorted={i:phoneDirectory[i] for i in my_keys}   
+       print(sorted)     
+            
     
     elif menu_num == 5:
         delete_name = input("Enter name to delete: ")
